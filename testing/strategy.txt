@@ -1,0 +1,12 @@
+to do:
+
+new strategy:
+
+look at the correlation between the same stock but listed on different exchanges.
+
+can you short / long position based on time differences and make a stop loss function 
+
+because theoritically they should be the same price, maybe sometimes discrepencies such as
+time differences or breaks for different stock exchange might affect stock values
+
+also maybe such as in china , they have 10% stock limit? this might be winning potential
