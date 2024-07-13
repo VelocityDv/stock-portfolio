@@ -9,12 +9,12 @@ class Data():
         start_date = '2019-11-26'
         end_date = date.today().strftime("%Y-%m-%d")
 
-        data = yf.download(ticker_symbols, start=start_date, end=end_date)['Adj Close']
+        data1 = yf.download(ticker_symbols[0], start=start_date, end=end_date)['Adj Close']
+        data2 = yf.download(ticker_symbols[1], start=start_date, end=end_date)['Adj Close']
+        # data.insert(0, 'Date', data.index)
 
-        data.insert(0, 'Date', data.index)
+        # data.to_csv(file_path, index=False)
+        return data1, data2
 
-        data.to_csv(file_path, index=False)
-
-
-data = Data()
-data.load_data()
+# data = Data()
+# data.load_data()
